@@ -1,0 +1,20 @@
+# REQUIRED_TOOLS
+# Format: tool_name|download_url|target_path|extraction_method|verify_file|description
+SQLITE3|https://www.sqlite.org/2024/sqlite-tools-win-x86-3450300.zip|E:\tools\sqlite3.exe|zip_extract|sqlite-tools-win-x86-3450300\sqlite3.exe|SQLite command line tool for database analysis
+STRINGS|https://live.sysinternals.com/strings.exe|E:\tools\strings.exe|direct_download||Sysinternals strings utility for text extraction
+VOLATILITY3|https://github.com/volatilityfoundation/volatility3/archive/refs/heads/develop.zip|E:\tools\volatility3|zip_extract|volatility3-develop|Memory analysis framework
+PHOTOREC|https://www.cgsecurity.org/testdisk-7.1.win.zip|E:\tools\photorec|zip_extract|testdisk-7.1\photorec_win.exe|File carving and recovery tool
+NIRSOFT_BROWSERHISTORYVIEW|https://www.nirsoft.net/utils/browserhistoryview.zip|E:\tools\BrowsingHistoryView.exe|zip_extract|BrowsingHistoryView.exe|Browser history analysis tool
+NIRSOFT_CHROMECACHEVIEW|https://www.nirsoft.net/utils/chromecacheview.zip|E:\tools\ChromeCacheView.exe|zip_extract|ChromeCacheView.exe|Chrome cache analysis tool
+
+# OPTIONAL_TOOLS
+# Format: tool_name|download_url|target_path|extraction_method|verify_file|description
+RECUVA|manual_download|E:\tools\recuva.exe|manual|recuva.exe|File recovery tool (manual download required)
+FTK_IMAGER|manual_download|E:\tools\FTKImager.exe|manual|FTKImager.exe|Disk imaging tool (manual download required)
+DB_BROWSER_SQLITE|https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.msi|E:\tools\sqlite_browser.msi|msi_download||GUI SQLite browser
+
+# TOOL_VERIFICATION
+# Commands to verify tools are working
+SQLITE3|E:\tools\sqlite3.exe -version
+STRINGS|E:\tools\strings.exe -accepteula
+PHOTOREC|E:\tools\photorec /version

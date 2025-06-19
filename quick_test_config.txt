@@ -1,0 +1,31 @@
+# QUICK_TEST_PLATFORMS
+# Format: PLATFORM_NAME|domain_pattern
+INSTAGRAM|instagram.com
+FACEBOOK|facebook.com
+TUMBLR|tumblr.com
+REDDIT|reddit.com
+TWITTER|twitter.com,x.com
+TIKTOK|tiktok.com
+SNAPCHAT|snapchat.com
+DISCORD|discord.com,discordapp.com
+TELEGRAM|web.telegram.org,telegram.org
+LINKEDIN|linkedin.com
+
+# SUSPICIOUS_DOMAINS
+# Additional domains to check for in history
+tinder.com,bumble.com,hinge.com,match.com,eharmony.com,okcupid.com,pof.com,ashley.com,seeking.com,onlyfans.com
+
+# EMAIL_PATTERNS
+# Patterns to look for in storage
+gmail.com,googlemail.com,protonmail.com,tutanota.com,temp-mail.org,guerrillamail.com
+
+# IMAGE_SIGNATURES
+# Format: signature_name|byte_pattern|extension|min_offset|max_offset
+JPEG|FF D8 FF|.jpg|0|0
+PNG|89 50 4E 47|.png|0|0
+GIF87|47 49 46 38 37|.gif|0|0
+GIF89|47 49 46 38 39|.gif|0|0
+WEBP|57 45 42 50|.webp|8|8
+BMP|42 4D|.bmp|0|0
+TIFF_LE|49 49 2A 00|.tiff|0|0
+TIFF_BE|4D 4D 00 2A|.tiff|0|0
